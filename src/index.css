@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-PublicSans: "PublicSans", sans-serif;
+  --color-background: #0D0D0D;
+  --color-primary: #32B9AE
+}
+
+@layer base {
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    background-color: var(--color-background);
+    font-family: var(--font-PublicSans);
+    color: white;
+  }
+}
+
+.custom-date {
+  margin-top: 20px;
+  margin-left: 20px;
+  /* tweak this as needed */
+}
