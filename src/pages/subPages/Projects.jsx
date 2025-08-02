@@ -40,8 +40,10 @@ export default function ContactMePage() {
                                 <img src={restTrack} className="w-sm" />
                             </div>
                             <div className="flex flex-col  space-y-3">
-                                <p className="font-bold text-4xl">Nagiosss</p>
-                                <p className="text-sm text-gray-300">I developed a Nagios using Expo (React Native) for the frontend and Node.js, Express, and MongoDB for the backend. The app allows real-time order placement, status tracking, and kitchen-side management.</p>
+                                <p className="font-bold text-4xl">Proactive Network and System Monitoring with Nagios</p>
+                                <p className="text-sm text-gray-300">This project is a custom-built monitoring system designed for ANANTARA Hotel, using Nagios Core to provide real-time tracking of IT infrastructure including servers, network devices, and critical services. The system features a modern, web-based dashboard that displays performance metrics, system health, and alerts in real time. It also includes an AI-powered chatbot that allows users to interact with the system using natural language to query status and receive updates.
+
+The platform automatically generates alerts when performance thresholds are breached and logs all events for troubleshooting and audits. Role-based access control and secure authentication ensure data protection. By shifting from reactive to proactive monitoring, this solution helps IT teams reduce downtime, respond faster to issues, and maintain a more stable infrastructure—all through an intuitive and accessible interface.</p>
 
                             </div>
                         </div>
