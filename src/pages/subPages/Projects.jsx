@@ -10,11 +10,7 @@ import Aurora from "../../../util/animations/Aurora";
 export default function ContactMePage() {
     const projects = {
         Nagios: {
-<<<<<<< HEAD
             title: "Proactive Network and System Monitoring with Nagios",
-=======
-            title: "Proactive Network and System Monitoring with Nagios ",
->>>>>>> faec76f0049c277e66bf2f7d34fad4319409742f
             description: "I developed a custom monitoring system for ANANTARA Hotel using Nagios Core to track servers, network devices, and critical services in real time. I built a modern web-based dashboard to visualize performance metrics, system health, and alerts. I also integrated an AI-powered chatbot for natural language queries. The system automatically generates alerts, logs all events for audits, and includes secure, role-based access control. This solution shifts IT operations from reactive to proactive, reducing downtime and improving issue response.",
             image: Nagios,
             technologies: ["Nagios"],
@@ -44,11 +40,7 @@ export default function ContactMePage() {
                                 <img src={Nagios} className="w-120" />
                             </div>
                             <div className="flex flex-col  space-y-3">
-<<<<<<< HEAD
                                 <p className="font-bold text-4xl">Proactive Network and System Monitoring with Nagios </p>
-=======
-                                <p className="font-bold text-4xl">Proactive Network and System Monitoring with Nagios</p>
->>>>>>> faec76f0049c277e66bf2f7d34fad4319409742f
                                 <p className="text-sm text-gray-300">I developed a custom monitoring system for ANANTARA Hotel using Nagios Core to track servers, network devices, and critical services in real time. I built a modern web-based dashboard to visualize performance metrics, system health, and alerts. I also integrated an AI-powered chatbot for natural language queries. The system automatically generates alerts, logs all events for audits, and includes secure, role-based access control. This solution shifts IT operations from reactive to proactive, reducing downtime and improving issue response.</p>
 
                             </div>

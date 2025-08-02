@@ -3,9 +3,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import GlassmorphismDiv from '../../../util/GlassmorphismDiv';
 import SplitText from "../../../util/animations/SplitText";
 import moe from '../../assets/moe.png'
-import egov from '../../assets/egov.png'
 import hct from '../../assets/hct.png'
-import dp from '../../assets/dp.png'
 
 import Squares from '../../../util/animations/Squares';
 export default function Experience() {
