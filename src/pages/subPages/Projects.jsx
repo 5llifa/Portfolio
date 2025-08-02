@@ -54,7 +54,7 @@ export default function ContactMePage() {
                                 <img src={restTrack} className="w-sm" />
                             </div>
                             <div className="flex flex-col  space-y-3">
-                                <p className="font-bold text-4xl">Nagios</p>
+                                <p className="font-bold text-4xl">Nagiosss</p>
                                 <p className="text-sm text-gray-300">I developed a Nagios using Expo (React Native) for the frontend and Node.js, Express, and MongoDB for the backend. The app allows real-time order placement, status tracking, and kitchen-side management.</p>
 
                             </div>
