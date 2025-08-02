@@ -29,20 +29,6 @@ export default function ContactMePage() {
                     speed={1}
                 />
             </div>
-
-            <div className="2xl:hidden flex flex-col justify-center items-center mx-10 space-y-6 mb-10">
-                <motion.div
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 15 }}
-                    className="p-3  backdrop-blur-md bg-white/20 border border-white/30 rounded-2xl shadow-md  flex justify-center items-center  "
-                >
-                    <div className="flex flex-col space-y-3">
-                        <div className="text-lg font-bold">Nagios</div>
-                        <p className="text-sm text-gray-300">I developed a Nagios using Expo (React Native) for the frontend and Node.js, Express, and MongoDB for the backend. The app allows real-time order placement, status tracking, and kitchen-side management.</p>
-                    </div>
-                </motion.div>
-            </div>
                     <motion.div
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
