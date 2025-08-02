@@ -4,7 +4,7 @@ import swift from "../src/assets/swift.png";
 import github from "../src/assets/github.svg";
 import cplus from "../src/assets/cplus.png";    
 import xcode from "../src/assets/xcode.png";
-import css from "../src/assets/css.png";
+import css from "../src/assets/css.PNG";
 import javascript from "../src/assets/javascript.png";
 import java from "../src/assets/java.png";
 import csharp from "../src/assets/csharp.svg";
