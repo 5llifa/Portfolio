@@ -3,17 +3,17 @@ import CustomButton from "../../../components/CustomButton";
 import ProjectCard from "../../../components/ProjectCard";
 import Threads from "../../../util/animations/Threads";
 import GlassmorphismDiv from "../../../util/GlassmorphismDiv";
-import restTrack from '../../assets/restTrack.png'
+import Nagios from '../../assets/Nagios.jpg'
 import { AnimatePresence, motion, } from "motion/react"
 import Aurora from "../../../util/animations/Aurora";
 
 export default function ContactMePage() {
     const projects = {
         Nagios: {
-            title: "Nagios",
-            description: "I developed a Nagios using Expo (React Native) for the frontend and Node.js, Express, and MongoDB for the backend. The app allows real-time order placement, status tracking, and kitchen-side management.",
-            image: restTrack,
-            technologies: ["Expo", "React Native", "Node.js", "Express", "MongoDB"],
+            title: "Proactive Network and System Monitoring with Nagios ",
+            description: "I developed a custom monitoring system for ANANTARA Hotel using Nagios Core to track servers, network devices, and critical services in real time. I built a modern web-based dashboard to visualize performance metrics, system health, and alerts. I also integrated an AI-powered chatbot for natural language queries. The system automatically generates alerts, logs all events for audits, and includes secure, role-based access control. This solution shifts IT operations from reactive to proactive, reducing downtime and improving issue response.",
+            image: Nagios,
+            technologies: ["Nagios"],
             buttons: []
         }
     };
@@ -37,7 +37,7 @@ export default function ContactMePage() {
                     >
                         <div className="flex flex-row p-6 space-x-6 items-center">
                             <div>
-                                <img src={restTrack} className="w-sm" />
+                                <img src={Nagios} className="w-120" />
                             </div>
                             <div className="flex flex-col  space-y-3">
                                 <p className="font-bold text-4xl">Proactive Network and System Monitoring with Nagios</p>
