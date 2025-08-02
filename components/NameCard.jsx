@@ -7,7 +7,7 @@ export default function NameCard() {
     return (
         <div >
             <SplitText
-                text="Hi, I’m Khalifa Alshehhi"
+                text="Hi, I’m Khalifaa Alshehhi"
                 className="font-black text-white md:text-4xl lg:text-5xl text-2xl text-wrap"
                 delay={30}
                 duration={0.3}
