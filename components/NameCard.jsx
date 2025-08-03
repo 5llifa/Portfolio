@@ -24,7 +24,7 @@ export default function NameCard() {
                 <p className="font-light text-gray-100 text-base">Recent Computer Science graduate passionate about solving real-world problems through scalable technology solutions.</p>
             </div>
             <div className="mt-5 flex flex-col space-y-3 lg:space-y-0 lg:space-x-5 lg:flex-row">
-                <a href="files/Khalifa_AlShehhi_CV.pdf" target="_blank" className="bg-primary rounded-3xl hover:bg-blue-400 p-3 flex flex-row w-full items-center space-x-3 max-w-56 transition-all duration-300">
+                <a href="files/Khalifa_Alshehhhi_CV.pdf" target="_blank" className="bg-primary rounded-3xl hover:bg-blue-400 p-3 flex flex-row w-full items-center space-x-3 max-w-56 transition-all duration-300">
                     <FontAwesomeIcon icon={faEye} size="xl"/>
                     <div className="grow">
                     <p className="text-center font-medium">View CV</p>
