@@ -78,7 +78,7 @@ export default function Tooltip({ children, content, position = "top" }) {
                 {isVisible && (
                     <motion.div
                         ref={tooltipRef}
-                        className={`absolute z-50 px-3 py-2 text-sm text-white bg-gray-900/90 backdrop-blur-sm rounded-lg shadow-lg whitespace-nowrap border border-gray-700 ${getPositionClasses(adjustedPosition)}`}
+                        className={`absolute z-50 px-3 py-2 text-sm text-gray-900 bg-white backdrop-blur-sm rounded-lg shadow-lg whitespace-nowrap border border-gray-300 ${getPositionClasses(adjustedPosition)}`}
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.8 }}
@@ -87,12 +87,12 @@ export default function Tooltip({ children, content, position = "top" }) {
                         {content}
                         {/* Arrow */}
                         <div 
-                            className={`absolute w-2 h-2 bg-gray-900/90 border-gray-700 transform rotate-45 ${getArrowClasses(adjustedPosition)}`}
+                            className={`absolute w-2 h-2 bg-white border-gray-300 transform rotate-45 ${getArrowClasses(adjustedPosition)}`}
                             style={{
-                                borderTop: adjustedPosition === 'bottom' ? '1px solid rgb(55, 65, 81)' : 'none',
-                                borderLeft: adjustedPosition === 'right' ? '1px solid rgb(55, 65, 81)' : 'none',
-                                borderRight: adjustedPosition === 'left' ? '1px solid rgb(55, 65, 81)' : 'none',
-                                borderBottom: adjustedPosition === 'top' ? '1px solid rgb(55, 65, 81)' : 'none',
+                                borderTop: adjustedPosition === 'bottom' ? '1px solid rgb(209, 213, 219)' : 'none',
+                                borderLeft: adjustedPosition === 'right' ? '1px solid rgb(209, 213, 219)' : 'none',
+                                borderRight: adjustedPosition === 'left' ? '1px solid rgb(209, 213, 219)' : 'none',
+                                borderBottom: adjustedPosition === 'top' ? '1px solid rgb(209, 213, 219)' : 'none',
                             }}
                         />
                     </motion.div>

@@ -27,13 +27,13 @@ export default function LoadingScreen({ onLoadingComplete }) {
         <AnimatePresence>
             {isVisible && (
                 <motion.div
-                    className="fixed inset-0 z-[100] bg-background flex flex-col items-center justify-center"
+                    className="fixed inset-0 z-[100] bg-white flex flex-col items-center justify-center"
                     initial={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.5 }}
                 >
                     <motion.div
-                        className="text-6xl font-bold text-primary mb-8"
+                        className="text-6xl font-bold text-gray-900 mb-8"
                         initial={{ scale: 0.8, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.5 }}
@@ -41,9 +41,9 @@ export default function LoadingScreen({ onLoadingComplete }) {
                         KA
                     </motion.div>
                     
-                    <div className="w-64 h-1 bg-white/20 rounded-full overflow-hidden">
+                    <div className="w-64 h-1 bg-gray-200 rounded-full overflow-hidden">
                         <motion.div
-                            className="h-full bg-primary rounded-full"
+                        className="h-full bg-blue-900 rounded-full"
                             initial={{ width: 0 }}
                             animate={{ width: `${progress}%` }}
                             transition={{ ease: "easeOut" }}
@@ -51,7 +51,7 @@ export default function LoadingScreen({ onLoadingComplete }) {
                     </div>
                     
                     <motion.p
-                        className="mt-4 text-white/70"
+                        className="mt-4 text-gray-700"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.3 }}

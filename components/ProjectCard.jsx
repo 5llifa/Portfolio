@@ -15,7 +15,7 @@ export default function ProjectCard({
 
     return (
         <motion.div
-            className={`p-3 backdrop-blur-md bg-white/20 border border-white/30 rounded-2xl shadow-md flex justify-center items-center relative overflow-hidden ${className}`}
+            className={`p-3 backdrop-blur-md bg-white border border-gray-300 rounded-2xl shadow-md flex justify-center items-center relative overflow-hidden ${className}`}
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             whileHover={{ scale: 1.02 }}
@@ -25,7 +25,7 @@ export default function ProjectCard({
         >
             {/* Hover overlay effect */}
             <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-primary/10 to-blue-600/10 rounded-2xl"
+                className="absolute inset-0 bg-gradient-to-r from-blue-100 to-blue-200 rounded-2xl"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: isHovered ? 1 : 0 }}
                 transition={{ duration: 0.3 }}
@@ -44,7 +44,7 @@ export default function ProjectCard({
                 
                 <div className={`flex flex-col space-y-3 ${isLarge ? '' : 'max-w-72'}`}>
                     <motion.p 
-                        className={`font-bold ${isLarge ? 'text-4xl' : 'text-lg'}`}
+                        className={`font-bold text-gray-900 ${isLarge ? 'text-4xl' : 'text-lg'}`}
                         initial={{ y: 20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.1 }}
@@ -53,7 +53,7 @@ export default function ProjectCard({
                     </motion.p>
                     
                     <motion.p 
-                        className="text-sm text-gray-300"
+                        className="text-sm text-gray-800"
                         initial={{ y: 20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.2 }}
@@ -72,7 +72,7 @@ export default function ProjectCard({
                             {technologies.map((tech, index) => (
                                 <span 
                                     key={index}
-                                    className="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full border border-primary/30"
+                            className="px-2 py-1 bg-blue-100 text-blue-900 text-xs rounded-full border border-blue-200"
                                 >
                                     {tech}
                                 </span>

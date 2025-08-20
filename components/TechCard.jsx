@@ -8,11 +8,11 @@ export default function TechCard({icon, title, desc}) {
                     <FontAwesomeIcon icon={icon}/>
                 </div>
                 <div className="flex ">
-                    <p className="font-medium text-lg">{title}</p>
+                    <p className="font-medium text-lg text-gray-900">{title}</p>
                 </div>
             </div>
             <div className="max-w-64 min-w-64">
-                <p className="font-light text-base  text-wrap mt-3">{desc}</p>
+                <p className="font-light text-base text-gray-800 text-wrap mt-3">{desc}</p>
             </div>
         </>
     )

@@ -33,7 +33,7 @@ export default function KeyboardShortcutsModal() {
         <>
             {/* Help button */}
             <motion.button
-                className="fixed bottom-6 right-6 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold shadow-lg z-40"
+                className="fixed bottom-6 right-6 w-12 h-12 bg-white border border-gray-300 rounded-full flex items-center justify-center text-gray-900 font-bold shadow-lg z-40"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsOpen(!isOpen)}
@@ -52,19 +52,19 @@ export default function KeyboardShortcutsModal() {
                         onClick={() => setIsOpen(false)}
                     >
                         <motion.div
-                            className="bg-gray-900 rounded-2xl p-8 max-w-md w-full mx-4 border border-white/20"
+                        className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 border border-gray-300"
                             initial={{ scale: 0.8, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             exit={{ scale: 0.8, opacity: 0 }}
                             onClick={(e) => e.stopPropagation()}
                         >
-                            <h2 className="text-2xl font-bold text-white mb-6">Keyboard Shortcuts</h2>
+                            <h2 className="text-2xl font-bold text-gray-900 mb-6">Keyboard Shortcuts</h2>
                             
                             <div className="space-y-3">
                                 {shortcuts.map((shortcut, index) => (
                                     <div key={index} className="flex items-center justify-between">
-                                        <span className="text-gray-300">{shortcut.description}</span>
-                                        <kbd className="px-2 py-1 bg-gray-800 border border-gray-600 rounded text-xs text-white">
+                                        <span className="text-gray-800">{shortcut.description}</span>
+                                        <kbd className="px-2 py-1 bg-gray-200 border border-gray-400 rounded text-xs text-gray-900">
                                             {shortcut.key}
                                         </kbd>
                                     </div>
@@ -72,7 +72,7 @@ export default function KeyboardShortcutsModal() {
                             </div>
 
                             <button
-                                className="mt-6 w-full bg-primary hover:bg-blue-600 text-white py-2 px-4 rounded-lg transition-colors"
+                                className="mt-6 w-full bg-blue-100 hover:bg-blue-200 text-gray-900 py-2 px-4 rounded-lg transition-colors"
                                 onClick={() => setIsOpen(false)}
                             >
                                 Got it!
