@@ -35,50 +35,43 @@ export default function AnimatedBackground() {
 
         // Animation loop
         const animate = () => {
-            // Draw a bright, eye-friendly gradient background (soft yellow to light blue)
+            // Light gradient background (soft yellow to white)
             const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
             gradient.addColorStop(0, "#fffde4"); // soft yellow
-            gradient.addColorStop(1, "#e0f2fe"); // light blue
+            gradient.addColorStop(1, "#ffffff"); // white
             ctx.fillStyle = gradient;
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            // Draw particles
+            // Draw particles (dark blue)
             particles.forEach(particle => {
-                // Update position
                 particle.x += particle.speedX;
                 particle.y += particle.speedY;
-
-                // Wrap around edges
                 if (particle.x > canvas.width) particle.x = 0;
                 if (particle.x < 0) particle.x = canvas.width;
                 if (particle.y > canvas.height) particle.y = 0;
                 if (particle.y < 0) particle.y = canvas.height;
-
-                // Draw particle
                 ctx.beginPath();
                 ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(96, 165, 250, ${particle.opacity})`;
+                ctx.fillStyle = `rgba(30, 64, 175, ${particle.opacity})`; // dark blue
                 ctx.fill();
             });
 
-            // Draw connecting lines
+            // Draw connecting lines (dark blue, subtle)
             particles.forEach((particle, i) => {
                 particles.slice(i + 1).forEach(otherParticle => {
                     const dx = particle.x - otherParticle.x;
                     const dy = particle.y - otherParticle.y;
                     const distance = Math.sqrt(dx * dx + dy * dy);
-
                     if (distance < 100) {
                         ctx.beginPath();
                         ctx.moveTo(particle.x, particle.y);
                         ctx.lineTo(otherParticle.x, otherParticle.y);
-                        ctx.strokeStyle = `rgba(96, 165, 250, ${0.1 * (1 - distance / 100)})`;
+                        ctx.strokeStyle = `rgba(30, 64, 175, ${0.08 * (1 - distance / 100)})`;
                         ctx.lineWidth = 0.5;
                         ctx.stroke();
                     }
                 });
             });
-
             animationFrameId = requestAnimationFrame(animate);
         };
 
@@ -94,7 +87,7 @@ export default function AnimatedBackground() {
         <canvas
             ref={canvasRef}
             className="fixed inset-0 w-full h-full pointer-events-none z-0"
-            style={{ background: 'transparent' }}
+            style={{ background: '#fffde4' }}
         />
     );
 }
