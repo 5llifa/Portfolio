@@ -35,7 +35,12 @@ export default function AnimatedBackground() {
 
         // Animation loop
         const animate = () => {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            // Draw a bright, eye-friendly gradient background (soft yellow to light blue)
+            const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+            gradient.addColorStop(0, "#fffde4"); // soft yellow
+            gradient.addColorStop(1, "#e0f2fe"); // light blue
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             // Draw particles
             particles.forEach(particle => {
