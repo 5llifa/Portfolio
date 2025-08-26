@@ -33,11 +33,11 @@ export default function ContactMePage() {
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
                         transition={{ type: "spring", stiffness: 300, damping: 15 }}
-                        className="p-5 backdrop-blur-md bg-white/20 border border-white/30 rounded-2xl shadow-md  col-start-1 row-start-4 col-span-4 row-span-2  flex justify-center items-center "
+                        className="p-3 backdrop-blur-md bg-white/20 border border-white/30 rounded-2xl shadow-md  col-start-1 row-start-4 col-span-4 row-span-2  flex justify-center items-center "
                     >
                         <div className="flex flex-row p-6 space-x-6 items-center">
                             <div>
-                                <img src={Nagios} className="w-120" />
+                                <img src={Nagios} className="w-150" />
                             </div>
                             <div className="flex flex-col  space-y-3">
                                 <p className="font-bold text-4xl">Proactive Network and System Monitoring with Nagios </p>
