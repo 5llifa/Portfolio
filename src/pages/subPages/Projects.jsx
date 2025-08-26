@@ -37,7 +37,7 @@ export default function ContactMePage() {
                     >
                         <div className="flex flex-row p-6 space-x-6 items-center">
                             <div>
-                                <img src={Nagios} className="w-150" />
+                                <img src={Nagios} className="w-120" />
                             </div>
                             <div className="flex flex-col  space-y-3">
                                 <p className="font-bold text-4xl">Proactive Network and System Monitoring with Nagios </p>
