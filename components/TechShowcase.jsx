@@ -23,9 +23,8 @@ export default function TechShowcase({ icon, name, desc }) {
                             <img src={icon} alt="tech icon" className="w-12 h-12 object-contain" />
                         </div>
                         <div>
-
-                            <p className=" text-lg text-gray-900">{name}</p>
-                            <p className="text-gray-800 text-sm">{desc}</p>
+                            <p className="text-lg text-white">{name}</p>
+                            <p className="text-white text-sm">{desc}</p>
                         </div>
                     </div>
 

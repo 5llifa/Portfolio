@@ -1,0 +1,16 @@
+@media (max-width: 600px) {
+  .namecard-responsive {
+    padding: 1rem !important;
+    font-size: 1rem !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+  }
+  .projectcard-responsive {
+    padding: 0.5rem !important;
+    font-size: 0.95rem !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+  }
+}
