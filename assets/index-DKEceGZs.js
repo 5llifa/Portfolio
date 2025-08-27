@@ -812,7 +812,7 @@ void main() {
                         padding: 0.7rem !important;
                     }
                     .font-black {
-                        font-size: 1.5rem !important;
+                        font-size: 1.8rem !important;
                     }
                     .font-medium {
                         font-size: 1.2rem !important;
