@@ -23,7 +23,7 @@ export default function ContactMePage() {
         <div className="w-full h-full relative border-b border-primary">
             <div className="absolute inset-0 z-0">
                 <Aurora
-                    colorStops={["#fffde4", "#e0f2fe", "#fff"]}
+                    colorStops={["#000", "#32B9AE", "#000"]}
                     blend={0.3}
                     amplitude={1.0}
                     speed={1}
