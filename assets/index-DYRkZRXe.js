@@ -818,7 +818,7 @@ void main() {
                         font-size: 1.2rem !important;
                     }
                     .font-light {
-                        font-size: 1.1rem !important;
+                        font-size: 1.0rem !important;
                     }
                     .rounded-3xl {
                         padding: 0.5rem !important;
