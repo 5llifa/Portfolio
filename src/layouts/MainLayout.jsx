@@ -13,10 +13,11 @@ export default function MainLayout() {
     // Enable keyboard shortcuts
     useKeyboardShortcuts();
 
+    const isProjectsPage = window.location.pathname.includes("projects");
     return (
         <>
             {isLoading && <LoadingScreen onLoadingComplete={() => setIsLoading(false)} />}
-            <AnimatedBackground />
+            {!isProjectsPage && <AnimatedBackground />}
             <ScrollProgress />
             <NavBar />
             <Outlet />
