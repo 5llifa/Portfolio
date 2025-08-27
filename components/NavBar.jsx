@@ -66,7 +66,7 @@ export default function NavBar() {
                                 section?.scrollIntoView({ behavior: "smooth" });
                             }}
                             className={`relative cursor-pointer z-10 px-3 py-3 text-sm sm:text-base font-semibold transition-all duration-300 rounded-full ${
-                                activeTab === tab ? "text-gray-900" : "text-gray-700 hover:text-gray-900"
+                                activeTab === tab ? "text-white" : "text-gray-400 hover:text-white"
                             }`}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}

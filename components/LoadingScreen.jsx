@@ -27,7 +27,8 @@ export default function LoadingScreen({ onLoadingComplete }) {
         <AnimatePresence>
             {isVisible && (
                 <motion.div
-                    className="fixed inset-0 z-[100] bg-white flex flex-col items-center justify-center"
+                    className="fixed inset-0 z-[100] flex flex-col items-center justify-center"
+                    style={{ background: 'linear-gradient(135deg, #19213A 0%, #355C7D 60%, #64a8f7 100%)' }}
                     initial={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.5 }}
@@ -51,7 +52,7 @@ export default function LoadingScreen({ onLoadingComplete }) {
                     </div>
                     
                     <motion.p
-                        className="mt-4 text-gray-700"
+                        className="mt-4 text-white"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.3 }}

@@ -33,7 +33,8 @@ export default function KeyboardShortcutsModal() {
         <>
             {/* Help button */}
             <motion.button
-                className="fixed bottom-6 right-6 w-12 h-12 bg-white border border-gray-300 rounded-full flex items-center justify-center text-gray-900 font-bold shadow-lg z-40"
+                className="fixed bottom-6 right-6 w-12 h-12 rounded-full flex items-center justify-center font-bold shadow-lg z-40"
+                style={{ background: '#64a8f7', color: '#fff', border: '2px solid #64a8f7' }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsOpen(!isOpen)}

@@ -42,8 +42,8 @@ export default function TechShowcase({ icon, name, desc }) {
                         className="hidden lg:block absolute top-full mt-4 left-1/2 -translate-x-1/2 border-2 min-w-44 border-white/30 rounded-3xl p-3 shadow-lg z-10 bg-white/10 backdrop-blur-md"
                     >
                         <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-b-8 border-transparent border-b-white/30" />
-                        <p className="text-base font-bold text-center mb-2 text-gray-900">{name}</p>
-                        <p className="text-sm font-light text-center text-gray-800">{desc}</p>
+                        <p className="text-base font-bold text-center mb-2 text-white">{name}</p>
+                        <p className="text-sm font-light text-center text-white">{desc}</p>
                     </motion.div>
                 )}
             </AnimatePresence>
