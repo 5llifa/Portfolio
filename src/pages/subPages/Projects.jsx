@@ -7,6 +7,7 @@ import Nagios from '../../assets/Nagios.jpg'
 import { AnimatePresence, motion, } from "motion/react"
 import Aurora from "../../../util/animations/Aurora";
 
+
 export default function ContactMePage() {
     const projects = {
         Nagios: {
@@ -19,35 +20,35 @@ export default function ContactMePage() {
     };
 
     return (
+    <div className="projects-bg w-full min-h-screen flex flex-col items-center justify-center pt-0 relative overflow-hidden">
+        {/* Aurora animation as full background, now visible */}
+        <div className="absolute inset-0 w-full h-full -z-10">
+            <Aurora colorStops={["#3b82f6", "#60a5fa", "#38bdf8", "#6366f1", "#3b82f6"]} blend={1} amplitude={2} speed={2} />
+        </div>
 
-        <div className="w-full h-full relative border-b border-primary">
-            <div className="absolute inset-0 z-0">
-                <Aurora
-                    colorStops={["#fffde4", "#e0f2fe", "#fff"]}
-                    blend={0.3}
-                    amplitude={1.0}
-                    speed={1}
-                />
-            </div>
-                    <motion.div
-                        initial={{ scale: 0 }}
-                        animate={{ scale: 1 }}
-                        transition={{ type: "spring", stiffness: 300, damping: 15 }}
-                        className="p-3 backdrop-blur-md bg-white/20 border border-white/30 rounded-2xl shadow-md  col-start-1 row-start-4 col-span-4 row-span-2  flex justify-center items-center "
-                    >
-                        <div className="flex flex-row p-6 space-x-6 items-center">
-                            <div>
-                                <img src={Nagios} className="w-120" />
-                            </div>
-                            <div className="flex flex-col  space-y-3">
-                                <p className="font-bold text-4xl">Proactive Network and System Monitoring with Nagios </p>
-                                <p className="text-sm text-gray-300">I developed a custom monitoring system for ANANTARA Hotel using Nagios Core to track servers, network devices, and critical services in real time. I built a modern web-based dashboard to visualize performance metrics, system health, and alerts. I also integrated an AI-powered chatbot for natural language queries. The system automatically generates alerts, logs all events for audits, and includes secure, role-based access control. This solution shifts IT operations from reactive to proactive, reducing downtime and improving issue response.</p>
-
-                            </div>
-                        </div>
-                    </motion.div>
-
+        {/* Project Card */}
+        <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", stiffness: 120, damping: 18 }}
+            className="p-10 rounded-2xl shadow-lg border border-blue-400 flex flex-row items-center space-x-12 w-full max-w-6xl mx-auto mt-32 mb-32 relative"
+            style={{ background: 'rgba(40, 60, 60, 0.5)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', borderRadius: '24px' }}
+        >
+                <div className="flex-shrink-0 flex items-center justify-center" style={{ height: '220px' }}>
+                    <div className="rounded-xl border border-blue-400 flex items-center justify-center shadow" style={{ width: '320px', height: '180px', background: 'rgba(36, 54, 80, 0.5)', backdropFilter: 'blur(8px)' }}>
+                        <img
+                            src={Nagios}
+                            alt="Nagios Monitoring Screenshot"
+                            className="object-contain w-full h-full rounded-lg"
+                            style={{ maxWidth: '300px', maxHeight: '160px' }}
+                        />
+                    </div>
                 </div>
-
-    )
+                <div className="flex flex-col justify-center ml-10">
+                    <p className="font-bold text-4xl text-white mb-6 leading-tight">Proactive Network and System Monitoring with Nagios</p>
+                    <p className="text-lg text-gray-200 max-w-xl leading-relaxed">I developed a custom monitoring system for ANANTARA Hotel using Nagios Core to track servers, network devices, and critical services in real time. I built a modern web-based dashboard to visualize performance metrics, system health, and alerts. I also integrated an AI-powered chatbot for natural language queries. The system automatically generates alerts, logs all events for audits, and includes secure, role-based access control. This solution shifts IT operations from reactive to proactive, reducing downtime and improving issue response.</p>
+                </div>
+            </motion.div>
+        </div>
+    );
 }

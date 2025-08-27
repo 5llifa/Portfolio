@@ -78,7 +78,8 @@ export default function Tooltip({ children, content, position = "top" }) {
                 {isVisible && (
                     <motion.div
                         ref={tooltipRef}
-                        className={`absolute z-50 px-3 py-2 text-sm text-gray-900 bg-white backdrop-blur-sm rounded-lg shadow-lg whitespace-nowrap border border-gray-300 ${getPositionClasses(adjustedPosition)}`}
+                        className={`absolute z-50 px-3 py-2 text-sm text-white rounded-lg shadow-lg whitespace-nowrap border border-gray-300 ${getPositionClasses(adjustedPosition)}`}
+                        style={{ background: '#19213A' }}
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.8 }}
