@@ -27,7 +27,7 @@ export default function NameCard() {
                 <p className="font-light text-base sm:text-lg" style={{ color: '#AAB2C8', fontSize: '1.1rem', whiteSpace: 'normal', overflow: 'visible', textOverflow: 'unset' }}>Recent Computer Science graduate passionate about solving real-world problems through scalable technology solutions.</p>
             </div>
             <div className="mt-5 flex flex-col space-y-4 sm:space-y-0 sm:space-x-5 sm:flex-row">
-                <a href="files/Khalifa_Alshehhhi_CV.pdf" target="_blank" className="rounded-3xl p-2 sm:p-3 flex flex-row w-full items-center space-x-2 sm:space-x-3 max-w-56 transition-all duration-300 text-base sm:text-base namecard-btn" style={{ background: '#64a8f7', color: '#fff', border: '2px solid #64a8f7' }}>
+                    <a href="/Portfolio/files/Khalifa_Alshehhi_CV.pdf" target="_blank" className="rounded-3xl p-2 sm:p-3 flex flex-row w-full items-center space-x-2 sm:space-x-3 max-w-56 transition-all duration-300 text-base sm:text-base namecard-btn" style={{ background: '#64a8f7', color: '#fff', border: '2px solid #64a8f7' }}>
                     <FontAwesomeIcon icon={faEye} size="sm"/>
                     <div className="grow">
                     <p className="text-center font-medium">View CV</p>

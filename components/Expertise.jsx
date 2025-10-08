@@ -25,8 +25,6 @@ export default function Expertise() {
                     <TechShowcase icon={javascript} name="JavaScript" desc="Essential language for building interactive and dynamic web applications" />
                     <TechShowcase icon={html} name="HTML" desc="Standard markup language for structuring content on the web" />
                     <TechShowcase icon={css} name="CSS" desc="Styling language used to design visually appealing and responsive web pages" />
-                    <TechShowcase icon={cplus} name="C++" desc="High-performance language used in game development, systems, and embedded software" />
-                    <TechShowcase icon={csharp} name="C#" desc="Versatile language by Microsoft for developing Windows apps, games, and enterprise software" />
                     <TechShowcase icon={github} name="Github" desc="Code hosting & version control" />
                 </div>
             </div>
