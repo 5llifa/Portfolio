@@ -20,7 +20,7 @@ export default function ProjectsPage() {
         <div className="w-full min-h-screen relative overflow-hidden px-4 pb-20 sm:px-6 lg:px-8 border-b border-primary">
             <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.18),transparent_22%),radial-gradient(circle_at_bottom_right,rgba(168,85,247,0.16),transparent_24%)]" />
             <div className="absolute inset-0 -z-10 bg-gradient-to-b from-slate-950 via-slate-950/75 to-slate-950" />
-            <AnimatedBackground />
+            <AnimatedBackground fullScreen={false} />
 
             <div className="relative z-10 flex justify-center pt-20">
                 <GlassmorphismDiv otherStyles={"p-10"}>

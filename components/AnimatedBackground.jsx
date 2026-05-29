@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-export default function AnimatedBackground() {
+export default function AnimatedBackground({ fullScreen = true }) {
     const canvasRef = useRef(null);
 
     useEffect(() => {
@@ -10,8 +10,16 @@ export default function AnimatedBackground() {
 
         // Set canvas size
         const resizeCanvas = () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+            if (fullScreen) {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            } else if (canvas.parentElement) {
+                canvas.width = canvas.parentElement.clientWidth;
+                canvas.height = canvas.parentElement.clientHeight;
+            } else {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
         };
 
         resizeCanvas();
@@ -83,12 +91,12 @@ export default function AnimatedBackground() {
             window.removeEventListener('resize', resizeCanvas);
             cancelAnimationFrame(animationFrameId);
         };
-    }, []);
+    }, [fullScreen]);
 
     return (
         <canvas
             ref={canvasRef}
-            className="fixed inset-0 w-full h-full pointer-events-none z-0"
+            className={`${fullScreen ? 'fixed inset-0' : 'absolute inset-0'} w-full h-full pointer-events-none z-0`}
             style={{ background: 'transparent' }}
         />
     );

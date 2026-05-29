@@ -4,7 +4,6 @@ import NavBar from "../../components/NavBar";
 import LoadingScreen from "../../components/LoadingScreen";
 import ScrollProgress from "../../components/ScrollProgress";
 import KeyboardShortcutsModal from "../../components/KeyboardShortcutsModal";
-import AnimatedBackground from "../../components/AnimatedBackground";
 import useKeyboardShortcuts from "../../util/useKeyboardShortcuts";
 
 export default function MainLayout() {
@@ -13,11 +12,9 @@ export default function MainLayout() {
     // Enable keyboard shortcuts
     useKeyboardShortcuts();
 
-    const isProjectsPage = window.location.pathname.includes("projects");
     return (
         <>
             {isLoading && <LoadingScreen onLoadingComplete={() => setIsLoading(false)} />}
-            {!isProjectsPage && <AnimatedBackground />}
             <ScrollProgress />
             <NavBar />
             <Outlet />
