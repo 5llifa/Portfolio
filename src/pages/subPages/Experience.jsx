@@ -44,7 +44,7 @@ export default function Experience() {
                         contentStyle={{ background: 'transparent', boxShadow: 'none', padding: 0 }}
                         contentArrowStyle={{ borderRight: '7px solid rgba(255, 255, 255, 0.3)', marginTop:25  }}
                         dateClassName="custom-date"
-                        date="Jan - May 2026"
+                        date="2015 - 2019"
                         iconStyle={{
                             background: '#fff',
                             color: '#fff',
@@ -53,14 +53,14 @@ export default function Experience() {
                             justifyContent: 'center',
                             width: '100px',
                             height: '100px',
-                            marginLeft: '-45px',  
+                            marginLeft: '-45px',
                         }}
-                        icon={<img src={icp} alt="icon" className="w-19 h-18" />}
+                        icon={<img src={moe} alt="icon" className="w-30 h-30" />}
                     >
                         <div className="p-6 backdrop-blur-md bg-white/20 border mt-8 border-white/30 rounded-2xl shadow-md">
-                            <h3 className="vertical-timeline-element-title text-3xl font-black">Federal Authority for Identity, Citizenship, Customs & Port Security (ICP)</h3>
+                            <h3 className="vertical-timeline-element-title text-3xl font-black">Tunb Secondary Schools</h3>
                             <h4 className="vertical-timeline-element-subtitle text-sm">Ras Al Khaimah, UAE</h4>
-                            <p>Completed my internship at ICP, where I worked alongside IT professionals and gained practical experience in technical support, system administration, troubleshooting, and digital transformation initiatives within a government organization.</p>
+                            <p>Studied at Tunb School with a strong academic foundation in science and technology. Developed critical thinking and problem-solving skills, which inspired my passion for application development and software engineering.</p>
                         </div>
                     </VerticalTimelineElement>
 
@@ -97,7 +97,7 @@ export default function Experience() {
                         contentStyle={{ background: 'transparent', boxShadow: 'none', padding: 0 }}
                         contentArrowStyle={{ borderRight: '7px solid rgba(255, 255, 255, 0.3)', marginTop:25  }}
                         dateClassName="custom-date"
-                        date="2015 - 2019"
+                        date="Jan - May 2026"
                         iconStyle={{
                             background: '#fff',
                             color: '#fff',
@@ -106,14 +106,14 @@ export default function Experience() {
                             justifyContent: 'center',
                             width: '100px',
                             height: '100px',
-                            marginLeft: '-45px',
+                            marginLeft: '-45px',  
                         }}
-                        icon={<img src={moe} alt="icon" className="w-30 h-30" />}
+                        icon={<img src={icp} alt="icon" className="w-19 h-18" />}
                     >
                         <div className="p-6 backdrop-blur-md bg-white/20 border mt-8 border-white/30 rounded-2xl shadow-md">
-                            <h3 className="vertical-timeline-element-title text-3xl font-black">Tunb Secondary Schools</h3>
+                            <h3 className="vertical-timeline-element-title text-3xl font-black">Federal Authority for Identity, Citizenship, Customs & Port Security (ICP)</h3>
                             <h4 className="vertical-timeline-element-subtitle text-sm">Ras Al Khaimah, UAE</h4>
-                            <p>Studied at Tunb School with a strong academic foundation in science and technology. Developed critical thinking and problem-solving skills, which inspired my passion for application development and software engineering.</p>
+                            <p>Completed my internship at ICP, where I worked alongside IT professionals and gained practical experience in technical support, system administration, troubleshooting, and digital transformation initiatives within a government organization.</p>
                         </div>
                     </VerticalTimelineElement>
 
