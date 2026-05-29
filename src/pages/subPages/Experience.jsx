@@ -55,7 +55,7 @@ export default function Experience() {
                             height: '100px',
                             marginLeft: '-45px',  
                         }}
-                        icon={<img src={icp} alt="icon" className="w-18 h-18" />}
+                        icon={<img src={icp} alt="icon" className="w-19 h-18" />}
                     >
                         <div className="p-6 backdrop-blur-md bg-white/20 border mt-8 border-white/30 rounded-2xl shadow-md">
                             <h3 className="vertical-timeline-element-title text-3xl font-black">Federal Authority for Identity, Citizenship, Customs & Port Security (ICP)</h3>
@@ -81,7 +81,7 @@ export default function Experience() {
                             height: '100px',
                             marginLeft: '-45px',  
                         }}
-                        icon={<img src={hct} alt="icon" className="w-16 h-14" />}
+                        icon={<img src={hct} alt="icon" className="w-20 h-13" />}
 
                     >
                         <div className="p-6 backdrop-blur-md bg-white/20 border mt-8 border-white/30 rounded-2xl shadow-md">
@@ -108,7 +108,7 @@ export default function Experience() {
                             height: '100px',
                             marginLeft: '-45px',
                         }}
-                        icon={<img src={moe} alt="icon" className="w-26 h-26" />}
+                        icon={<img src={moe} alt="icon" className="w-30 h-30" />}
                     >
                         <div className="p-6 backdrop-blur-md bg-white/20 border mt-8 border-white/30 rounded-2xl shadow-md">
                             <h3 className="vertical-timeline-element-title text-3xl font-black">Tunb Secondary Schools</h3>
