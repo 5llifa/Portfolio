@@ -6,87 +6,48 @@ export default function ProjectCard({
   image,
   technologies,
   buttons,
-  isLarge = false,
   className = ""
 }) {
   return (
     <div
-      className={`flex flex-row items-center p-2 bg-white border border-gray-300 rounded-2xl shadow-md w-full max-w-full ${className}`}
-      style={{
-        boxSizing: 'border-box',
-        maxWidth: '100vw',
-        minHeight: '80px',
-        background: 'rgba(255,255,255,0.95)'
-      }}
+      className={`group overflow-hidden rounded-[28px] border border-slate-700/80 bg-slate-950/85 shadow-[0_35px_120px_-65px_rgba(14,165,233,0.35)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_45px_150px_-70px_rgba(59,130,246,0.45)] ${className}`}
+      style={{ backdropFilter: 'blur(18px)' }}
     >
       {image && (
-        <div
-          className="flex-shrink-0 bg-white rounded-xl border border-gray-200 mr-2"
-          style={{
-            width: '56px',
-            height: '56px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}
-        >
-          <img
-            src={image}
-            alt={title}
-            style={{
-              width: '48px',
-              height: '48px',
-              objectFit: 'contain',
-              borderRadius: '0.5rem'
-            }}
-          />
+        <div className="relative overflow-hidden border-b border-slate-700/80 bg-slate-950/90">
+          <div className="overflow-hidden rounded-t-[28px] border border-slate-700/80 bg-slate-950/95">
+            <img
+              src={image}
+              alt={title}
+              className="object-contain w-full h-72 transition duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/90 to-transparent" />
         </div>
       )}
-      <div
-        className="flex flex-col justify-center flex-1 min-w-0 bg-white rounded-xl p-2"
-        style={{
-          color: '#222',
-          fontSize: '14px',
-          wordBreak: 'break-word',
-          overflowWrap: 'break-word'
-        }}
-      >
-        <p
-          className="font-bold text-xs sm:text-base mb-1"
-          style={{
-            color: '#222',
-            textAlign: 'left',
-            margin: 0,
-            padding: 0
-          }}
-        >
-          {title}
-        </p>
-        <p
-          className="text-xs sm:text-sm mb-1"
-          style={{
-            color: '#222',
-            textAlign: 'left',
-            margin: 0,
-            padding: 0
-          }}
-        >
-          {description}
-        </p>
-        {technologies && (
-          <div className="flex flex-wrap gap-1 sm:gap-2 mt-1">
+
+      <div className="flex flex-col gap-5 p-6 sm:p-7">
+        <div className="flex items-start justify-between gap-4">
+          <h3 className="text-xl font-semibold text-white sm:text-2xl">{title}</h3>
+        </div>
+
+        <p className="text-sm leading-7 text-slate-300 sm:text-base">{description}</p>
+
+        {technologies && technologies.length > 0 && (
+          <div className="flex flex-wrap gap-2">
             {technologies.map((tech, index) => (
               <span
                 key={index}
-                className="px-1 sm:px-2 py-0.5 sm:py-1 bg-blue-100 text-blue-900 text-[10px] sm:text-xs rounded-full border border-blue-200"
+                className="inline-flex items-center rounded-full border border-slate-700/80 bg-slate-900/80 px-3 py-1 text-xs font-medium text-slate-200"
               >
                 {tech}
               </span>
             ))}
           </div>
         )}
-        {buttons && (
-          <div className={`flex ${isLarge ? 'flex-row space-x-2 sm:space-x-3' : 'flex-col space-y-2 sm:space-y-3'} mt-2`}>
+
+        {buttons && buttons.length > 0 && (
+          <div className="flex flex-wrap gap-3 pt-1">
             {buttons.map((button, index) => (
               <CustomButton
                 key={index}
