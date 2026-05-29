@@ -1,14 +1,14 @@
 import TechShowcase from "./TechShowcase";
 import python from "../src/assets/python.png";
 import swift from "../src/assets/swift.png";
-import github from "../src/assets/github.svg";
-import cplus from "../src/assets/cplus.png";    
+import github from "../src/assets/github.svg"; 
 import xcode from "../src/assets/xcode.png";
 import css from "../src/assets/css.PNG";
 import javascript from "../src/assets/javascript.PNG";
 import java from "../src/assets/java.png";
-import csharp from "../src/assets/csharp.svg";
 import html from "../src/assets/html.PNG";
+import mysql from "../src/assets/mySQL.png";
+import oracle from "../src/assets/oracle.png";
 import HorizontalLineBreak from "../components/HorizontalLineBreak";
 
 
@@ -25,6 +25,8 @@ export default function Expertise() {
                     <TechShowcase icon={javascript} name="JavaScript" desc="Essential language for building interactive and dynamic web applications" />
                     <TechShowcase icon={html} name="HTML" desc="Standard markup language for structuring content on the web" />
                     <TechShowcase icon={css} name="CSS" desc="Styling language used to design visually appealing and responsive web pages" />
+                    <TechShowcase icon={mysql} name="MySQL" desc="Relational database management system used to efficiently store, organize, and retrieve structured data for web and enterprise applications." />
+                    <TechShowcase icon={oracle} name="Oracle" desc="Powerful enterprise-grade database system designed for handling large-scale data management, ensuring performance, reliability, and security." />
                     <TechShowcase icon={github} name="Github" desc="Code hosting & version control" />
                 </div>
             </div>

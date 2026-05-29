@@ -2,8 +2,10 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import GlassmorphismDiv from '../../../util/GlassmorphismDiv';
 import SplitText from "../../../util/animations/SplitText";
-import moe from '../../assets/moe.png'
-import hct from '../../assets/hct.png'
+import moe from '../../assets/moe.png';
+import hct_logo from '../../assets/hct_logo.jpg';
+import hct from '../../assets/hct.png';
+import icp from '../../assets/icp.jpg';
 
 import Squares from '../../../util/animations/Squares';
 export default function Experience() {
@@ -35,14 +37,16 @@ export default function Experience() {
                     />
                 </GlassmorphismDiv>
                 <VerticalTimeline>
+
+
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: 'transparent', boxShadow: 'none', padding: 0 }}
                         contentArrowStyle={{ borderRight: '7px solid rgba(255, 255, 255, 0.3)', marginTop:25  }}
                         dateClassName="custom-date"
-                        date="2021 - 2026"
+                        date="Jan - May 2026"
                         iconStyle={{
-                            background: '#000',
+                            background: '#fff',
                             color: '#fff',
                             display: 'flex',
                             alignItems: 'center',
@@ -51,7 +55,33 @@ export default function Experience() {
                             height: '100px',
                             marginLeft: '-45px',  
                         }}
-                        icon={<img src={hct} alt="icon" className="w-19 h-12" />}
+                        icon={<img src={icp} alt="icon" className="w-19 h-19" />}
+                    >
+                        <div className="p-6 backdrop-blur-md bg-white/20 border mt-8 border-white/30 rounded-2xl shadow-md">
+                            <h3 className="vertical-timeline-element-title text-3xl font-black">Federal Authority for Identity, Citizenship, Customs & Port Security (ICP)</h3>
+                            <h4 className="vertical-timeline-element-subtitle text-sm">Ras Al Khaimah, UAE</h4>
+                            <p>Completed my internship at ICP, where I worked alongside IT professionals and gained practical experience in technical support, system administration, troubleshooting, and digital transformation initiatives within a government organization.</p>
+                        </div>
+                    </VerticalTimelineElement>
+
+
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: 'transparent', boxShadow: 'none', padding: 0 }}
+                        contentArrowStyle={{ borderRight: '7px solid rgba(255, 255, 255, 0.3)', marginTop:25  }}
+                        dateClassName="custom-date"
+                        date="2021 - 2026"
+                        iconStyle={{
+                            background: '#fff',
+                            color: '#fff',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            width: '100px',
+                            height: '100px',
+                            marginLeft: '-45px',  
+                        }}
+                        icon={<img src={hct} alt="icon" className="w-16 h-14" />}
 
                     >
                         <div className="p-6 backdrop-blur-md bg-white/20 border mt-8 border-white/30 rounded-2xl shadow-md">
@@ -60,6 +90,8 @@ export default function Experience() {
                             <p>Completed my Bachelor’s degree in Computer & Information Science at the Higher College of Technology (HCT), where I gained a strong foundation in Application Development, Software Development, Data Structures, Algorithms, and System Design.</p>
                         </div>
                     </VerticalTimelineElement>
+
+
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: 'transparent', boxShadow: 'none', padding: 0 }}
@@ -67,14 +99,14 @@ export default function Experience() {
                         dateClassName="custom-date"
                         date="2015 - 2019"
                         iconStyle={{
-                            background: '#000',
+                            background: '#fff',
                             color: '#fff',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
                             width: '100px',
                             height: '100px',
-                            marginLeft: '-45px',  
+                            marginLeft: '-45px',
                         }}
                         icon={<img src={moe} alt="icon" className="w-26 h-26" />}
                     >
@@ -84,6 +116,8 @@ export default function Experience() {
                             <p>Studied at Tunb School with a strong academic foundation in science and technology. Developed critical thinking and problem-solving skills, which inspired my passion for application development and software engineering.</p>
                         </div>
                     </VerticalTimelineElement>
+
+
                 </VerticalTimeline>
             </div>
         </div>
