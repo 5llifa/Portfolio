@@ -55,7 +55,7 @@ export default function Experience() {
                             height: '100px',
                             marginLeft: '-45px',  
                         }}
-                        icon={<img src={icp} alt="icon" className="w-19 h-19" />}
+                        icon={<img src={icp} alt="icon" className="w-18 h-18" />}
                     >
                         <div className="p-6 backdrop-blur-md bg-white/20 border mt-8 border-white/30 rounded-2xl shadow-md">
                             <h3 className="vertical-timeline-element-title text-3xl font-black">Federal Authority for Identity, Citizenship, Customs & Port Security (ICP)</h3>
